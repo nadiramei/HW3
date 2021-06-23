@@ -1,53 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:background="@drawable/gradient2"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".StartActivity"
-    android:gravity="center"
-    android:orientation="vertical">
-s
-    <TextView
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Assignment III"
-        android:textSize="30dp"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nadira Meidina Y."
-        android:textSize="14dp"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adini Gufroni"
-        android:textSize="14dp"/>
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient3"
+    tools:context=".MainActivity">
 
-    <Button
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login_button"
-        android:text="Log In"/>
-    <Button
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="32dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profile_pic"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Welcome, "
+                android:fontFamily="sans-serif-light"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yn"
+                android:textColor="@color/white"
+                android:text="Y/N"
+                android:textSize="20dp"
+                android:layout_marginLeft="2dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablayout"
+            android:background="@color/pink1"
+            app:tabSelectedTextColor="@color/black"
+            app:tabIndicatorColor="@color/pink3"
+            app:tabTextColor="@color/white"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/register_button"
-        android:text="Register"/>
+        android:layout_height="match_parent"/>
+    <!--app:layout_behaviour="@string/appbar_scrolling_view_behaviour"-->
 </LinearLayout>
