@@ -1,8 +1,8 @@
-# Chat App Project
-### Chat Application with Firebase Database.
+# Chat Application with Firebase Database
 
-##### Link video demo of app features (https://drive.google.com/drive/folders/1_FSTDBq2k7ZSWZ3KgUt190uhtGhLjGmj?usp=sharing)
 ##### Assignment 3 by Nadira Meidina Yasmine (1313617026) and Adini Gufroni (1313617035)
+##### Link video demo of app features (https://drive.google.com/drive/folders/1_FSTDBq2k7ZSWZ3KgUt190uhtGhLjGmj?usp=sharing)
+
 
 ## Register function
 
