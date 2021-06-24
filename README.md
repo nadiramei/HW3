@@ -1,6 +1,9 @@
-# Chat App demo
-Assignment III
-by Nadira Meidina Yasmine and Adini Gufroni
+# Chat App Project
+###### This is a Chat Application with Firebase Cloud Messaging. In this app, we use Firebase Database.
+
+Assignment 3
+by Nadira Meidina Yasmine (1313617026) and Adini Gufroni (1313617035)
+- Link video demo of app features ()
 
 ## Register function
 
